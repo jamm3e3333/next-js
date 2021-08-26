@@ -21,12 +21,13 @@ const EventItem = (props) => {
                             year: 'numeric'
                         })}</time>
                     </div>
-                </div>
-                <div className={classes.address}>
-                    <AddressIcon />
-                    <address>
-                        {location.replace(' ,', '\n')}
-                    </address>
+                
+                    <div className={classes.address}>
+                        <AddressIcon />
+                        <address>
+                            {location.replace(' ,', '\n')}
+                        </address>
+                    </div>
                 </div>
                 <div className={classes.actions}>
                     <Button link={exploreLink}>
